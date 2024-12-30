@@ -14,24 +14,38 @@ const _layout = () => {
         // headerTintColor: 'white',
       }}
     >
-      <Stack.Screen name='index' options={{
-        title: 'Home'
-      }} />
-      <Stack.Screen name='login' options={{
-        title: 'Login Modal',
-        presentation: 'modal'
-      }} />
-      <Stack.Screen name='register/index' options={{
-        title: 'Register',
-        headerRight: ()=>(
-          <Button onPress={() => router.push('/login') }
-            title='Login'
-          />
-        )
-      }} />
-      <Stack.Screen name='[missing]' options={{
-        title: '404 Error'
-      }} />
+      {/* Add page headers and customize it's look */}
+      <Stack.Screen name='index'
+        options={{
+          title: 'Home'
+        }}
+      />
+      <Stack.Screen name='(tabs)'
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen name='login'
+        options={{
+          title: 'Login Modal',
+          presentation: 'modal'
+        }}
+      />
+      <Stack.Screen name='register/index'
+        options={{
+          title: 'Register',
+          headerRight: ()=>(
+            <Button onPress={() => router.push('/login') }
+              title='Login'
+            />
+          )
+        }}
+      />
+      <Stack.Screen name='[missing]'
+        options={{
+          title: '404 Error'
+        }}
+      />
     </Stack>
   )
 }

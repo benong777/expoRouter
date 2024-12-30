@@ -12,6 +12,14 @@ const Index = () => {
         <Button 
           title='Open register page' />
       </Link>
+      <Link href='/one' asChild>
+        <Button 
+          title='Open Tab One' />
+      </Link>
+      <Link href='/two' asChild>
+        <Button 
+          title='Open Tab Two' />
+      </Link>
     </View>
   )
 }
