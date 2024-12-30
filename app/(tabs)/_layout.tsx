@@ -18,6 +18,13 @@ const _layout = () => {
           headerTitle: 'Tab Two',
           tabBarLabel: 'Two'     
         }}/>
+      <Tabs.Screen
+        name='posts'
+        options={{
+          // headerTitle: 'Posts Header',
+          tabBarLabel: 'Posts',
+          headerShown: false
+        }}/>
     </Tabs>
   )
 }
